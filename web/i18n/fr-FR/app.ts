@@ -27,21 +27,7 @@ const translation = {
   newApp: {
     startFromBlank: 'Créer à partir de zéro',
     startFromTemplate: 'Créer à partir d\'un modèle',
-    captionAppType: 'Quel type d\'application souhaitez-vous créer ?',
-    chatbotDescription: 'Construisez une application basée sur le chat. Cette application utilise un format question-réponse, permettant ainsi plusieurs tours de conversation continue.',
-    completionDescription: 'Construisez une application qui génère du texte de haute qualité en fonction des invites, telles que la génération d\'articles, de résumés, de traductions, et plus encore.',
-    completionWarning: 'Ce type d\'application ne sera plus pris en charge.',
-    agentDescription: 'Construisez un agent intelligent capable de choisir automatiquement les outils pour accomplir les tâches',
-    workflowDescription: 'Construisez une application qui génère du texte de haute qualité en fonction d\'un flux de travail avec un haut degré de personnalisation. Il convient aux utilisateurs expérimentés.',
     workflowWarning: 'Actuellement en version bêta',
-    chatbotType: 'Méthode d\'orchestration du chatbot',
-    basic: 'Basique',
-    basicTip: 'Pour les débutants, peut passer à Chatflow plus tard',
-    basicFor: 'POUR LES DÉBUTANTS',
-    basicDescription: 'L\'orchestration de base permet d\'orchestrer une application Chatbot à l\'aide de paramètres simples, sans possibilité de modifier les invites intégrées. Il convient aux débutants.',
-    advanced: 'Chatflow',
-    advancedFor: 'Pour les utilisateurs avancés',
-    advancedDescription: 'L\'orchestration de flux de travail orchestre les Chatbots sous forme de workflows, offrant un haut degré de personnalisation, y compris la possibilité de modifier les invites intégrées. Il convient aux utilisateurs expérimentés.',
     captionName: 'Icône et nom de l\'application',
     appNamePlaceholder: 'Donnez un nom à votre application',
     captionDescription: 'Description',
@@ -93,6 +79,7 @@ const translation = {
     noIdeaTip: 'Pas d’idées ? Consultez nos modèles',
     optional: 'Optionnel',
     advancedShortDescription: 'Workflow amélioré pour conversations multi-tours',
+    dropDSLToCreateApp: 'Déposez le fichier DSL ici pour créer une application',
   },
   editApp: 'Modifier les informations',
   editAppTitle: 'Modifier les informations de l\'application',
@@ -135,6 +122,14 @@ const translation = {
       notConfigured: 'Configurez le fournisseur pour activer le traçage',
       moreProvider: 'Plus de fournisseurs',
     },
+    arize: {
+      title: 'Arize',
+      description: 'Observabilité de LLM de niveau entreprise, évaluation en ligne et hors ligne, surveillance et expérimentation—alimentée par OpenTelemetry. Conçue spécialement pour les applications basées sur LLM et agents.',
+    },
+    phoenix: {
+      title: 'Phoenix',
+      description: 'Plateforme open-source basée sur OpenTelemetry pour l’observabilité, l’évaluation, l’ingénierie des prompts et l’expérimentation de vos flux de travail et agents LLM.',
+    },
     langsmith: {
       title: 'LangSmith',
       description: 'Une plateforme de développement tout-en-un pour chaque étape du cycle de vie des applications basées sur LLM.',
@@ -162,6 +157,10 @@ const translation = {
     weave: {
       title: 'Tisser',
       description: 'Weave est une plateforme open-source pour évaluer, tester et surveiller les applications LLM.',
+    },
+    aliyun: {
+      title: 'Surveillance Cloud',
+      description: 'La plateforme d\'observabilité entièrement gérée et sans maintenance fournie par Alibaba Cloud permet une surveillance, un traçage et une évaluation prêts à l\'emploi des applications Dify.',
     },
   },
   answerIcon: {
@@ -246,6 +245,9 @@ const translation = {
   },
   accessControl: 'Contrôle d\'accès à l\'application Web',
   noAccessPermission: 'Pas de permission d\'accéder à l\'application web',
+  maxActiveRequestsPlaceholder: 'Entrez 0 pour illimité',
+  maxActiveRequests: 'Nombre maximal de requêtes simultanées',
+  maxActiveRequestsTip: 'Nombre maximum de requêtes actives concurrentes par application (0 pour illimité)',
 }
 
 export default translation

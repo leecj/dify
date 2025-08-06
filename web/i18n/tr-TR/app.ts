@@ -29,21 +29,7 @@ const translation = {
   newApp: {
     startFromBlank: 'Boş Oluştur',
     startFromTemplate: 'Şablondan Oluştur',
-    captionAppType: 'Ne tür bir uygulama oluşturmak istiyorsunuz?',
-    chatbotDescription: 'Sohbete dayalı bir uygulama oluşturun. Bu uygulama, çoklu turlar halinde sürekli konuşmaya izin veren bir soru-cevap formatı kullanır.',
-    completionDescription: 'Prompt temelinde yüksek kaliteli metinler üreten bir uygulama oluşturun, örneğin makaleler, özetler, çeviriler ve daha fazlasını oluşturmak için.',
-    completionWarning: 'Bu tür bir uygulama artık desteklenmeyecek.',
-    agentDescription: 'Görevleri tamamlamak için araçları bağımsız olarak seçebilen bir zeki Agent oluşturun',
-    workflowDescription: 'Yüksek derecede özelleştirilebilir bir workflow ile yüksek kaliteli metinler üreten bir uygulama oluşturun. Deneyimli kullanıcılar için uygundur.',
     workflowWarning: 'Şu anda beta aşamasında',
-    chatbotType: 'Chatbot düzenleme yöntemi',
-    basic: 'Temel',
-    basicTip: 'Yeni başlayanlar için, daha sonra Chatflow\'a geçilebilir',
-    basicFor: 'YENİ BAŞLAYANLAR İÇİN',
-    basicDescription: 'Temel Orkestrasyon, yerleşik promptları değiştirme yeteneği olmadan, basit ayarlarla bir Chatbot uygulamasının orkestrasyonuna olanak tanır. Yeni başlayanlar için uygundur.',
-    advanced: 'Chatflow',
-    advancedFor: 'Gelişmiş kullanıcılar için',
-    advancedDescription: 'Workflow Orkestrasyonu, yerleşik promptları düzenleme yeteneği de dahil olmak üzere yüksek derecede özelleştirme sunarak Chatbotları workflow formunda düzenler. Deneyimli kullanıcılar için uygundur.',
     captionName: 'Uygulama simgesi & ismi',
     appNamePlaceholder: 'Uygulamanıza bir isim verin',
     captionDescription: 'Açıklama',
@@ -72,11 +58,11 @@ const translation = {
     appCreateDSLErrorPart3: 'Geçerli uygulama DSL sürümü:',
     appCreateDSLErrorTitle: 'Sürüm Uyumsuzluğu',
     Confirm: 'Onaylamak',
-    foundResults: '{{sayı}} Sonuç -ları',
+    foundResults: '{{count}} Sonuç -ları',
     noAppsFound: 'Uygulama bulunamadı',
     chatbotUserDescription: 'Basit yapılandırmayla hızlı bir şekilde LLM tabanlı bir sohbet botu oluşturun. Daha sonra Chatflow\'a geçebilirsiniz.',
     optional: 'Opsiyonel',
-    foundResult: '{{sayı}} Sonuç',
+    foundResult: '{{count}} Sonuç',
     noTemplateFound: 'Şablon bulunamadı',
     workflowUserDescription: 'Sürükle-bırak kolaylığıyla görsel olarak otonom yapay zeka iş akışları oluşturun.',
     advancedUserDescription: 'Ek bellek özellikleri ve sohbet robotu arayüzü ile iş akışı.',
@@ -93,6 +79,7 @@ const translation = {
     advancedShortDescription: 'Çok turlu sohbetler için geliştirilmiş iş akışı',
     noIdeaTip: 'Fikriniz yok mu? Şablonlarımıza göz atın',
     forAdvanced: 'İLERI DÜZEY KULLANICILAR IÇIN',
+    dropDSLToCreateApp: 'Uygulama oluşturmak için DSL dosyasını buraya bırakın',
   },
   editApp: 'Bilgileri Düzenle',
   editAppTitle: 'Uygulama Bilgilerini Düzenle',
@@ -135,6 +122,14 @@ const translation = {
       notConfigured: 'İzlemeyi etkinleştirmek için sağlayıcıyı yapılandırın',
       moreProvider: 'Daha Fazla Sağlayıcı',
     },
+    arize: {
+      title: 'Arize',
+      description: 'Kurumsal düzeyde LLM gözlemlenebilirliği, çevrimiçi ve çevrimdışı değerlendirme, izleme ve deneyler — OpenTelemetry ile desteklenmektedir. LLM ve ajan tabanlı uygulamalar için özel olarak tasarlanmıştır.',
+    },
+    phoenix: {
+      title: 'Phoenix',
+      description: 'LLM iş akışlarınız ve ajanlarınız için açık kaynaklı ve OpenTelemetry tabanlı gözlemlenebilirlik, değerlendirme, istem mühendisliği ve deney platformu.',
+    },
     langsmith: {
       title: 'LangSmith',
       description: 'LLM destekli uygulama yaşam döngüsünün her adımı için her şeyi kapsayan bir geliştirici platformu.',
@@ -162,6 +157,10 @@ const translation = {
     weave: {
       title: 'Dokuma',
       description: 'Weave, LLM uygulamalarını değerlendirmek, test etmek ve izlemek için açık kaynaklı bir platformdur.',
+    },
+    aliyun: {
+      title: 'Bulut İzleyici',
+      description: 'Alibaba Cloud tarafından sağlanan tamamen yönetilen ve bakım gerektirmeyen gözlemleme platformu, Dify uygulamalarının kutudan çıkar çıkmaz izlenmesi, takip edilmesi ve değerlendirilmesine olanak tanır.',
     },
   },
   answerIcon: {
@@ -242,6 +241,9 @@ const translation = {
   },
   accessControl: 'Web Uygulaması Erişim Kontrolü',
   noAccessPermission: 'Web uygulamasına erişim izni yok',
+  maxActiveRequestsPlaceholder: 'Sınırsız için 0 girin',
+  maxActiveRequests: 'Maksimum eş zamanlı istekler',
+  maxActiveRequestsTip: 'Her uygulama için maksimum eşzamanlı aktif istek sayısı (sınırsız için 0)',
 }
 
 export default translation

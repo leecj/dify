@@ -106,15 +106,14 @@ const translation = {
     exportImage: 'Exportă imaginea',
     exportSVG: 'Exportă ca SVG',
     exportPNG: 'Exportă ca PNG',
-    noExist: 'Nu există o astfel de variabilă',
     exitVersions: 'Ieșire Versiuni',
     versionHistory: 'Istoricul versiunilor',
     publishUpdate: 'Publicați actualizarea',
-    referenceVar: 'Variabilă de referință',
     exportJPEG: 'Exportă ca JPEG',
     addBlock: 'Adaugă nod',
     needAnswerNode: 'Nodul de răspuns trebuie adăugat',
     needEndNode: 'Nodul de sfârșit trebuie adăugat',
+    tagBound: 'Numărul de aplicații care folosesc acest tag',
   },
   env: {
     envPanelTitle: 'Variabile de Mediu',
@@ -129,6 +128,8 @@ const translation = {
       value: 'Valoare',
       valuePlaceholder: 'valoare mediu',
       secretTip: 'Utilizat pentru a defini informații sau date sensibile, cu setări DSL configurate pentru prevenirea scurgerilor.',
+      description: 'Descriere',
+      descriptionPlaceholder: 'Descrieți variabila',
     },
     export: {
       title: 'Exportă variabile de mediu secrete?',
@@ -188,6 +189,7 @@ const translation = {
     nodeDescriptionChange: 'Descrierea nodului a fost modificată',
     edgeDelete: 'Nod deconectat',
     nodeAdd: 'Nod adăugat',
+    nodeDragStop: 'Nod mutat',
   },
   errorMsg: {
     fieldRequired: '{{field}} este obligatoriu',
@@ -218,7 +220,6 @@ const translation = {
   tabs: {
     'tools': 'Instrumente',
     'allTool': 'Toate',
-    'builtInTool': 'Integrat',
     'customTool': 'Personalizat',
     'workflowTool': 'Flux de lucru',
     'question-understand': 'Înțelegerea întrebărilor',
@@ -231,6 +232,8 @@ const translation = {
     'plugin': 'Plugin',
     'blocks': 'Noduri',
     'searchBlock': 'Căutare nod',
+    'addAll': 'Adaugă tot',
+    'allAdded': 'Toate adăugate',
   },
   blocks: {
     'start': 'Începe',
@@ -284,6 +287,18 @@ const translation = {
     zoomTo50: 'Mărește la 50%',
     zoomTo100: 'Mărește la 100%',
     zoomToFit: 'Mărește pentru a se potrivi',
+    horizontal: 'Orizontal',
+    selectionAlignment: 'Alinierea selecției',
+    vertical: 'Vertical',
+    alignRight: 'Dreapta',
+    alignLeft: 'Stânga',
+    alignMiddle: 'Mijloc',
+    distributeVertical: 'Spațiu vertical',
+    alignCenter: 'Centru',
+    distributeHorizontal: 'Spațiu orizontal',
+    alignBottom: 'Fund',
+    alignTop: 'Culme',
+    alignNodes: 'Alinierea nodurilor',
   },
   panel: {
     userInputField: 'Câmp de introducere utilizator',
@@ -302,6 +317,8 @@ const translation = {
     addNextStep: 'Adăugați următorul pas în acest flux de lucru',
     changeBlock: 'Schimbă nodul',
     selectNextStep: 'Selectați Pasul Următor',
+    maximize: 'Maximize Canvas',
+    minimize: 'Iesi din modul pe tot ecranul',
   },
   nodes: {
     common: {
@@ -358,6 +375,10 @@ const translation = {
         ms: 'Ms',
         retries: '{{num}} Încercări',
         retryTimes: 'Reîncercați {{times}} ori în caz de eșec',
+      },
+      typeSwitch: {
+        variable: 'Folosește variabila',
+        input: 'Valoare de intrare',
       },
     },
     start: {
@@ -485,6 +506,7 @@ const translation = {
           search: 'Căutare metadate',
         },
         title: 'Filtrarea metadatelor',
+        tip: 'Filtrarea metadatelor este procesul de utilizare a atributelor metadatelor (cum ar fi etichetele, categoriile sau permisiunile de acces) pentru a rafina și controla recuperarea informațiilor relevante într-un sistem.',
       },
     },
     http: {
@@ -534,6 +556,10 @@ const translation = {
         placeholder: 'Lipiți șirul cURL aici',
         title: 'Importați din cURL',
       },
+      verifySSL: {
+        title: 'Verifică certificatul SSL',
+        warningTooltip: 'Dezactivarea verificării SSL nu este recomandată pentru medii de producție. Acest lucru ar trebui să fie folosit doar în dezvoltare sau testare, deoarece face conexiunea vulnerabilă la amenințări de securitate, cum ar fi atacurile man-in-the-middle.',
+      },
     },
     code: {
       inputVars: 'Variabile de intrare',
@@ -541,6 +567,7 @@ const translation = {
       advancedDependencies: 'Dependențe avansate',
       advancedDependenciesTip: 'Adăugați câteva dependențe preîncărcate care necesită mai mult timp pentru a consuma sau nu sunt integrate implicit aici',
       searchDependencies: 'Căutați dependențe',
+      syncFunctionSignature: 'Sincronizați semnătura funcției cu codul',
     },
     templateTransform: {
       inputVars: 'Variabile de intrare',
@@ -569,7 +596,6 @@ const translation = {
         'not empty': 'nu este gol',
         'null': 'este null',
         'not null': 'nu este null',
-        'regex match': 'potrivire regex',
         'in': 'în',
         'not in': 'nu în',
         'exists': 'Există',
@@ -592,7 +618,6 @@ const translation = {
       },
       select: 'Alege',
       addSubVariable: 'Subvariabilă',
-      condition: 'Condiție',
     },
     variableAssigner: {
       title: 'Atribuie variabile',
@@ -660,12 +685,16 @@ const translation = {
         json: 'JSON generat de instrument',
       },
       authorize: 'Autorizați',
+      insertPlaceholder2: 'introduce o variabilă',
+      insertPlaceholder1: 'Scrieți sau apăsați',
+      settings: 'Setări',
     },
     questionClassifiers: {
       model: 'model',
       inputVars: 'Variabile de intrare',
       outputVars: {
         className: 'Nume clasă',
+        usage: 'Informații de utilizare a modelului',
       },
       class: 'Clasă',
       classNamePlaceholder: 'Scrieți numele clasei',
@@ -679,6 +708,11 @@ const translation = {
     },
     parameterExtractor: {
       inputVar: 'Variabilă de intrare',
+      outputVars: {
+        isSuccess: 'Este succes. În caz de succes valoarea este 1, în caz de eșec valoarea este 0.',
+        errorReason: 'Motivul erorii',
+        usage: 'Informații de utilizare a modelului',
+      },
       extractParameters: 'Extrageți parametrii',
       importFromTool: 'Importă din instrumente',
       addExtractParameter: 'Adăugați parametru de extragere',
@@ -698,8 +732,6 @@ const translation = {
       advancedSetting: 'Setare avansată',
       reasoningMode: 'Mod de raționament',
       reasoningModeTip: 'Puteți alege modul de raționament potrivit în funcție de capacitatea modelului de a răspunde la instrucțiuni pentru apelarea funcțiilor sau prompturi.',
-      isSuccess: 'Este succes. În caz de succes valoarea este 1, în caz de eșec valoarea este 0.',
-      errorReason: 'Motivul erorii',
     },
     iteration: {
       deleteTitle: 'Ștergeți nodul de iterație?',
@@ -840,6 +872,8 @@ const translation = {
       modelNotInstallTooltip: 'Acest model nu este instalat',
       linkToPlugin: 'Link către pluginuri',
       model: 'model',
+      parameterSchema: 'Schema parametrului',
+      clickToViewParameterSchema: 'Click pentru a vizualiza schema parametrilor',
     },
     loop: {
       ErrorMethod: {
@@ -905,6 +939,7 @@ const translation = {
       deleteFailure: 'Ștergerea versiunii a eșuat',
       updateSuccess: 'Versiune actualizată',
       updateFailure: 'Actualizarea versiunii a eșuat',
+      copyIdSuccess: 'ID copiat în clipboard',
     },
     latest: 'Cea mai recentă',
     title: 'Versiuni',
@@ -915,6 +950,45 @@ const translation = {
     releaseNotesPlaceholder: 'Descrie ce s-a schimbat',
     deletionTip: 'Ștergerea este irreversibilă, vă rugăm să confirmați.',
     currentDraft: 'Draftul curent',
+    copyId: 'Copiază ID',
+  },
+  debug: {
+    noData: {
+      runThisNode: 'Rulează acest nod',
+      description: 'Rezultatele ultimei rulări vor fi afișate aici',
+    },
+    variableInspect: {
+      trigger: {
+        clear: 'Clar',
+        running: 'Starea de funcționare a cache-ului',
+        cached: 'Vizualizează variabilele cached',
+        normal: 'Inspectare variabilă',
+        stop: 'Oprește-te din alergat',
+      },
+      chatNode: 'Conversație',
+      title: 'Inspectare variabilă',
+      systemNode: 'Sistem',
+      clearAll: 'Resetare toate',
+      emptyLink: 'Învățați mai multe',
+      view: 'Vizualizați jurnalul',
+      envNode: 'Mediu',
+      reset: 'Resetează la ultima valoare rulată',
+      resetConversationVar: 'Resetați variabila de conversație la valoarea implicită',
+      edited: 'Editat',
+      clearNode: 'Șterge variabila cached',
+      emptyTip: 'După ce ai trecut printr-un nod pe canvas sau ai rulat un nod pas cu pas, poți vizualiza valoarea curentă a variabilei nodului în Inspectarea Variabilelor.',
+    },
+    settingsTab: 'Setări',
+    lastRunTab: 'Ultima execuție',
+    relations: {
+      dependencies: 'Dependenţele',
+      noDependencies: 'Fără dependențe',
+      dependents: 'Dependenţe',
+      noDependents: 'Fără persoane aflate în întreținere',
+      dependentsDescription: 'Noduri care se bazează pe acest nod',
+      dependenciesDescription: 'Noduri pe care se bazează acest nod',
+    },
+    relationsTab: 'Relații',
   },
 }
 

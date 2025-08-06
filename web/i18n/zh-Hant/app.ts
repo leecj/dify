@@ -26,21 +26,7 @@ const translation = {
   newApp: {
     startFromBlank: '建立空白應用',
     startFromTemplate: '從應用模版建立',
-    captionAppType: '想要哪種應用類型？',
-    chatbotDescription: '使用大型語言模型構建聊天助手',
-    completionDescription: '構建一個根據提示生成高品質文字的應用程式，例如生成文章、摘要、翻譯等。',
-    completionWarning: '該類型不久後將不再支援建立',
-    agentDescription: '構建一個智慧 Agent，可以自主選擇工具來完成任務',
-    workflowDescription: '以工作流的形式編排生成型應用，提供更多的自訂設定。它適合有經驗的使用者。',
     workflowWarning: '正在進行 Beta 測試',
-    chatbotType: '聊天助手編排方法',
-    basic: '基礎編排',
-    basicTip: '新手適用，可以切換成工作流編排',
-    basicFor: '新手適用',
-    basicDescription: '基本編排允許使用簡單的設定編排聊天機器人應用程式，而無需修改內建提示。它適合初學者。',
-    advanced: '工作流編排',
-    advancedFor: '進階使用者適用',
-    advancedDescription: '工作流編排以工作流的形式編排聊天機器人，提供自訂設定，包括編輯內建提示的能力。它適合有經驗的使用者。',
     captionName: '應用名稱 & 圖示',
     appNamePlaceholder: '給你的應用起個名字',
     captionDescription: '描述',
@@ -92,6 +78,7 @@ const translation = {
     advancedUserDescription: '具有記憶體功能的多輪複雜對話任務的工作流程編排。',
     chooseAppType: '選擇 App Type',
     completionShortDescription: '用於文本生成任務的 AI 助手',
+    dropDSLToCreateApp: '將 DSL 檔案拖放到此處以創建應用程式',
   },
   editApp: '編輯資訊',
   editAppTitle: '編輯應用資訊',
@@ -135,6 +122,14 @@ const translation = {
       notConfigured: '配置提供商以啟用追蹤',
       moreProvider: '更多提供商',
     },
+    arize: {
+      title: 'Arize',
+      description: '企業級LLM可觀測性、線上與離線評估、監控和實驗平台，基於OpenTelemetry構建，專為LLM和代理驅動的應用程式設計。',
+    },
+    phoenix: {
+      title: 'Phoenix',
+      description: '開源且基於OpenTelemetry的可觀測性、評估、提示工程和實驗平台，適用於您的LLM工作流程和代理。',
+    },
     langsmith: {
       title: 'LangSmith',
       description: '一個全方位的開發者平台，用於 LLM 驅動的應用程式生命週期的每個步驟。',
@@ -161,6 +156,10 @@ const translation = {
     weave: {
       title: '編織',
       description: 'Weave 是一個開源平台，用於評估、測試和監控大型語言模型應用程序。',
+    },
+    aliyun: {
+      title: '雲端監控',
+      description: '阿里雲提供的完全管理且無需維護的可觀察性平台，支持即時監控、追蹤和評估 Dify 應用程序。',
     },
   },
   answerIcon: {
@@ -245,6 +244,9 @@ const translation = {
   },
   accessControl: '網頁應用程式存取控制',
   noAccessPermission: '沒有權限訪問網絡應用程式',
+  maxActiveRequestsPlaceholder: '輸入 0 以表示無限',
+  maxActiveRequests: '同時最大請求數',
+  maxActiveRequestsTip: '每個應用程式可同時活躍請求的最大數量（0為無限制）',
 }
 
 export default translation

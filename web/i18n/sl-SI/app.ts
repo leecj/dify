@@ -31,21 +31,7 @@ const translation = {
   newApp: {
     startFromBlank: 'Ustvari iz nič',
     startFromTemplate: 'Ustvari iz predloge',
-    captionAppType: 'Kakšno aplikacijo želite ustvariti?',
-    chatbotDescription: 'Zgradite aplikacijo, ki temelji na klepetu. Ta aplikacija uporablja format vprašanj in odgovorov, ki omogoča več krogov neprekinjenega pogovora.',
-    completionDescription: 'Zgradite aplikacijo, ki na podlagi pozivov generira visokokakovostno besedilo, kot je ustvarjanje člankov, povzetkov, prevodov in več.',
-    completionWarning: 'Ta vrsta aplikacije ne bo več podprta.',
-    agentDescription: 'Zgradite inteligentnega agenta, ki lahko samostojno izbere orodja za dokončanje nalog.',
-    workflowDescription: 'Zgradite aplikacijo, ki generira visokokakovostno besedilo na podlagi orkestracije poteka dela z visoko stopnjo prilagodljivosti. Primerna je za izkušene uporabnike.',
     workflowWarning: 'Trenutno v beta različici',
-    chatbotType: 'Metoda orkestracije klepetalnika',
-    basic: 'Osnovno',
-    basicTip: 'Za začetnike, lahko kasneje preklopite na Chatflow',
-    basicFor: 'ZA ZAČETNIKE',
-    basicDescription: 'Osnovna orkestracija omogoča orkestracijo aplikacije klepetalnika z enostavnimi nastavitvami, brez možnosti spreminjanja vgrajenih pozivov. Primerna je za začetnike.',
-    advanced: 'Chatflow',
-    advancedFor: 'Za napredne uporabnike',
-    advancedDescription: 'Orkestracija poteka dela orkestrira klepetalnike v obliki potekov dela, ki ponuja visoko stopnjo prilagodljivosti, vključno z možnostjo urejanja vgrajenih pozivov. Primerna je za izkušene uporabnike.',
     captionName: 'Ikona in ime aplikacije',
     appNamePlaceholder: 'Poimenujte svojo aplikacijo',
     captionDescription: 'Opis',
@@ -79,8 +65,8 @@ const translation = {
     advancedShortDescription: 'Potek dela izboljšan za večkratne pogovore',
     noAppsFound: 'Ni bilo najdenih aplikacij',
     agentShortDescription: 'Inteligentni agent z razmišljanjem in avtonomno uporabo orodij',
-    foundResult: '{{štetje}} Rezultat',
-    foundResults: '{{štetje}} Rezultati',
+    foundResult: '{{count}} Rezultat',
+    foundResults: '{{count}} Rezultati',
     noTemplateFoundTip: 'Poskusite iskati z različnimi ključnimi besedami.',
     optional: 'Neobvezno',
     forBeginners: 'Bolj osnovne vrste aplikacij',
@@ -97,6 +83,7 @@ const translation = {
     chatbotShortDescription: 'Chatbot, ki temelji na LLM, s preprosto nastavitvijo',
     chooseAppType: 'Izberite vrsto aplikacije',
     learnMore: 'Izvedi več',
+    dropDSLToCreateApp: 'Spustite DSL datoteko sem, da ustvarite aplikacijo',
   },
   editApp: 'Uredi informacije',
   editAppTitle: 'Uredi informacije o aplikaciji',
@@ -145,6 +132,14 @@ const translation = {
       notConfigured: 'Konfigurirajte ponudnika za omogočanje sledenja',
       moreProvider: 'Več ponudnikov',
     },
+    arize: {
+      title: 'Arize',
+      description: 'Podjetniško opazovanje LLM, spletno in nespletno vrednotenje, nadzorovanje in eksperimentiranje — s podporo OpenTelemetry. Namenjeno aplikacijam, ki temeljijo na LLM in agentih.',
+    },
+    phoenix: {
+      title: 'Phoenix',
+      description: 'Odprtokodna in na OpenTelemetry osnovana platforma za opazovanje, vrednotenje, inženiring pozivov ter eksperimentiranje za vaše LLM poteke dela in agente.',
+    },
     langsmith: {
       title: 'LangSmith',
       description: 'Vse-v-enem razvijalska platforma za vsak korak življenjskega cikla aplikacije, ki jo poganja LLM.',
@@ -171,6 +166,10 @@ const translation = {
     weave: {
       title: 'Tkanje',
       description: 'Weave je odprtokodna platforma za vrednotenje, testiranje in spremljanje aplikacij LLM.',
+    },
+    aliyun: {
+      title: 'Oblačni nadzor',
+      description: 'Popolnoma upravljana in brez vzdrževanja platforma za opazovanje, ki jo zagotavlja Alibaba Cloud, omogoča takojšnje spremljanje, sledenje in ocenjevanje aplikacij Dify.',
     },
   },
   mermaid: {
@@ -246,6 +245,9 @@ const translation = {
   },
   accessControl: 'Nadzor dostopa do spletne aplikacije',
   noAccessPermission: 'Brez dovoljenja za dostop do spletne aplikacije',
+  maxActiveRequestsPlaceholder: 'Vnesite 0 za neomejeno',
+  maxActiveRequests: 'Maksimalno število hkratnih zahtevkov',
+  maxActiveRequestsTip: 'Največje število hkrati aktivnih zahtevkov na aplikacijo (0 za neomejeno)',
 }
 
 export default translation

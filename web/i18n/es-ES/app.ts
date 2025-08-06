@@ -27,21 +27,7 @@ const translation = {
   newApp: {
     startFromBlank: 'Crear desde cero',
     startFromTemplate: 'Crear desde plantilla',
-    captionAppType: '¿Qué tipo de app quieres crear?',
-    chatbotDescription: 'Crea una aplicación basada en chat. Esta app utiliza un formato de pregunta y respuesta, permitiendo múltiples rondas de conversación continua.',
-    completionDescription: 'Crea una aplicación que genera texto de alta calidad basado en prompts, como la generación de artículos, resúmenes, traducciones y más.',
-    completionWarning: 'Este tipo de app ya no será compatible.',
-    agentDescription: 'Crea un Agente inteligente que puede elegir herramientas de forma autónoma para completar tareas',
-    workflowDescription: 'Crea una aplicación que genera texto de alta calidad basado en flujos de trabajo con un alto grado de personalización. Es adecuado para usuarios experimentados.',
     workflowWarning: 'Actualmente en beta',
-    chatbotType: 'Método de orquestación del Chatbot',
-    basic: 'Básico',
-    basicTip: 'Para principiantes, se puede cambiar a Chatflow más adelante',
-    basicFor: 'PARA PRINCIPIANTES',
-    basicDescription: 'La Orquestación Básica permite la orquestación de una app de Chatbot utilizando configuraciones simples, sin la capacidad de modificar los prompts incorporados. Es adecuado para principiantes.',
-    advanced: 'Chatflow',
-    advancedFor: 'Para usuarios avanzados',
-    advancedDescription: 'La Orquestación de Flujo de Trabajo orquesta Chatbots en forma de flujos de trabajo, ofreciendo un alto grado de personalización, incluida la capacidad de editar los prompts incorporados. Es adecuado para usuarios experimentados.',
     captionName: 'Icono y nombre de la app',
     appNamePlaceholder: 'Asigna un nombre a tu app',
     captionDescription: 'Descripción',
@@ -93,6 +79,7 @@ const translation = {
     foundResult: '{{conteo}} Resultado',
     chatbotUserDescription: 'Cree rápidamente un chatbot basado en LLM con una configuración sencilla. Puedes cambiar a Chatflow más tarde.',
     completionUserDescription: 'Cree rápidamente un asistente de IA para tareas de generación de texto con una configuración sencilla.',
+    dropDSLToCreateApp: 'Suelta el archivo DSL aquí para crear la aplicación',
   },
   editApp: 'Editar información',
   editAppTitle: 'Editar información de la app',
@@ -135,6 +122,14 @@ const translation = {
       notConfigured: 'Configurar proveedor para habilitar el rastreo',
       moreProvider: 'Más proveedores',
     },
+    arize: {
+      title: 'Arize',
+      description: 'Observabilidad de LLM de nivel empresarial, evaluación en línea y fuera de línea, monitoreo y experimentación—impulsada por OpenTelemetry. Diseñada específicamente para aplicaciones impulsadas por LLM y agentes.',
+    },
+    phoenix: {
+      title: 'Phoenix',
+      description: 'Plataforma de observabilidad, evaluación, ingeniería de prompts y experimentación de código abierto basada en OpenTelemetry para sus flujos de trabajo y agentes de LLM.',
+    },
     langsmith: {
       title: 'LangSmith',
       description: 'Una plataforma de desarrollo todo en uno para cada paso del ciclo de vida de la aplicación impulsada por LLM.',
@@ -162,6 +157,10 @@ const translation = {
     weave: {
       description: 'Weave es una plataforma de código abierto para evaluar, probar y monitorear aplicaciones de LLM.',
       title: 'Tejer',
+    },
+    aliyun: {
+      title: 'Monitor de Nubes',
+      description: 'La plataforma de observabilidad totalmente gestionada y sin mantenimiento proporcionada por Alibaba Cloud, permite la monitorización, trazado y evaluación de aplicaciones Dify de manera inmediata.',
     },
   },
   answerIcon: {
@@ -207,6 +206,7 @@ const translation = {
     modelNotSupportedTip: 'El modelo actual no admite esta función y se degrada automáticamente a inyección de comandos.',
     structuredTip: 'Las Salidas Estructuradas son una función que garantiza que el modelo siempre generará respuestas que se ajusten a su esquema JSON proporcionado.',
     modelNotSupported: 'Modelo no soportado',
+    structured: 'sistemático',
   },
   accessItemsDescription: {
     anyone: 'Cualquiera puede acceder a la aplicación web.',
@@ -245,6 +245,9 @@ const translation = {
   },
   accessControl: 'Control de Acceso a la Aplicación Web',
   noAccessPermission: 'No se permite el acceso a la aplicación web',
+  maxActiveRequestsPlaceholder: 'Introduce 0 para ilimitado',
+  maxActiveRequests: 'Máximas solicitudes concurrentes',
+  maxActiveRequestsTip: 'Número máximo de solicitudes activas concurrentes por aplicación (0 para ilimitado)',
 }
 
 export default translation
